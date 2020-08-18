@@ -1,7 +1,7 @@
 # Shock response with SEA - What to expect?
 I got a chance to revisit an application of Statistical Energy Analysis (SEA) during some course work at KTH; the application of predicting high frequency shock response of plate-like structures, which I researched in my Masters Thesis one and a half decade ago. The analysed structure is shown below, comprised of five connected metal plates.
 
-|![](/images/plate_numbered_red.png "Five-plate structure")| ![](/images/plate_response.png "Shock response of five-plate structure"){: height="80%" width="80%"}|
+|![](/images/plate_numbered_red.png "Five-plate structure")| ![](/images/plate_response.png "Shock response of five-plate structure"){: height="70%" width="70%"}|
 
 Shock waves in structures due to sudden release of energy are common in aerospace applications. Explosive bolts to separate rocket stages, latches and deployment of appendices are some examples. The shock load is often short in time and the frequency content of the propagating waves are high. In some cases, the analysis is performed up to 100 kHz. This requires a high element-density when using FE-methods to predict the shock wave propagation. That's where SEA comes in to play.
 
