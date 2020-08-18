@@ -3,9 +3,7 @@ I got a chance to revisit an application of Statistical Energy Analysis (SEA) du
 
 ![](/images/waves.png "Shock response of five-plate structure")
 
-Shock waves in structures due to sudden release of energy are common in aerospace applications. Explosive bolts to separate rocket stages, latches and deployment of appendices are some examples. The shock load is often short in time and the frequency content of the propagating waves are high. In some cases, the analysis is performed up to 100 kHz. This requires a high element-density when using FE-methods to predict the shock wave propagation. That's where SEA comes in to play.
-
-![](/images/plate_numbered_red.png "Analyzed five-plate structure")
+| Shock waves in structures due to sudden release of energy are common in aerospace applications. Explosive bolts to separate rocket stages, latches and deployment of appendices are some examples. The shock load is often short in time and the frequency content of the propagating waves are high. In some cases, the analysis is performed up to 100 kHz. This requires a high element-density when using FE-methods to predict the shock wave propagation. That's where SEA comes in to play.| ![](/images/plate_numbered_red.png "Analyzed five-plate structure")|
 
 ## Statistical Energy Analysis (SEA)
 SEA was developed for analysing mid- to high-frequency acoustics and has been later on become a tool in vibro-acoustics. Instead of a calculating the deterministic responses of structures, a statistical approach is done by considering an average response of similar sub-structures. An "element" can be one of the plates in the presented structure.
