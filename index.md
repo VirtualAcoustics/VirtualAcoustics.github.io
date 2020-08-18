@@ -1,1 +1,1 @@
-## Dynamics, Vibration and Acoustics
+Dynamics, Vibration and Acoustics
