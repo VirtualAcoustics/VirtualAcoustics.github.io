@@ -28,6 +28,8 @@ So, to the main question. **What results can we expect from SEA in comparison to
 
 The blue dotted line in the figure to the right shows the average-velocity of 30 random points on the plate in third-octave bands, calculated by the (deterministic) mode summation technique and the green line is calculated with SEA. At 3-4 kHz we see how the results converge. Thus, the modal density is sufficiently high for SEA to be valid.
 
+![](/images/plate_vel_3rd_oct.png "Third-octave response of a plate"){: height="70%" width="70%"}
+
 As a final example, let us excite the previously presented five-plate structure with a 1 ms Haversine impulse at the lower end of plate 1 and compare the SEA results with the results from a FE-model of the structure. In the figure below, we see the spatial average acceleration of the individual five plates, respectively. The dashed lines are from the FE-model and the solid lines are from SEA model. Here, we also see that the results converge more and more as the frequency increases and the modal density increases. We have a rather good agreement between the two methods in the high-frequency region. The high-frequency results from the FE-model is however limited by the choice of element size. The element size was chosen to give reasonable simulation time on the cost of limiting the upper frequency range. Nevertheless, this is where SEA can take over, showing how the two methods can be used in conjunction.
 
 # Conclusion
