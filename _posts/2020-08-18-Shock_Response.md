@@ -10,8 +10,9 @@ SEA was developed for analysing mid- to high-frequency acoustics and has been la
 
 A typical two-subsystem arrangement, depicted on the left, is commonly used to demonstrate the power flow in SEA. Eᵢ represents the vibro-acoustic energy of i:th subsystem and the power input to each system is Pᵢ. Each subsystem has a power-loss, ωηᵢEᵢ, where ω is the analysed center-frequency and ηᵢ is **the loss factor**. The energy exchange between the two subsystems are governed by the coupling loss factor η₁₂ and the reciprocal loss factor η₂₁. The power balance for the system may be set up and written
 
-$P_1 = \omega \eta_1 E_1 + \omega \eta_{12} \eta_{1} \left(\frac{E_1}{n_1} - \frac{E_2}{n_2} \right)$,
-$P_2 = \omega \eta_2 E_2 + \omega \eta_{21} \eta_{2} \left(\frac{E_2}{n_2} - \frac{E_1}{n_1} \right)$,
+$$P_1 = \omega \eta_1 E_1 + \omega \eta_{12} \eta_{1} \left(\frac{E_1}{n_1} - \frac{E_2}{n_2} \right)$$,
+
+$$P_2 = \omega \eta_2 E_2 + \omega \eta_{21} \eta_{2} \left(\frac{E_2}{n_2} - \frac{E_1}{n_1} \right)$$,
 
 where the modal density nᵢ of the i:th subsystem has been introduced. This system of equations may be solved for the energy and the spatial averaged velocity squared may be calculated by, v² = Eᵢ / mᵢ, where m is the mass of the subsystem. The Shock Response Spectrum (SRS) is commonly used to evaluate the shock severity. Anyhow, let us keep it simple and stick to analysing the velocity and acceleration responses.
 
