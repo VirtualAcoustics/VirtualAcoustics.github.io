@@ -10,7 +10,7 @@ SEA was developed for analysing mid- to high-frequency acoustics and has been la
 
 A typical two-subsystem arrangement, depicted on the left, is commonly used to demonstrate the power flow in SEA. Eᵢ represents the vibro-acoustic energy of i:th subsystem and the power input to each system is Pᵢ. Each subsystem has a power-loss, ωηᵢEᵢ, where ω is the analysed center-frequency and ηᵢ is **the loss factor**. The energy exchange between the two subsystems are governed by the coupling loss factor η₁₂ and the reciprocal loss factor η₂₁. The power balance for the system may be set up and written
 
-$$P_1 = \omega \eta_1 E_1 + \omega \eta_{12} \eta_{1} E_1 ( E_1/n_1 - E_2/n_2 )$$,
+$$P_1 = \omega \eta_1 E_1 + \omega \eta_{12} \eta_{1} E_1 \left(\frac{E_1}{n_1} - \frac{E_2}{n_2} \right)$$,
 
 P₂ = ω η₂ E₂ + ω η₂₁ n₂ E₂ ( E₂/n₂ - E₁/n₁ ),
 
