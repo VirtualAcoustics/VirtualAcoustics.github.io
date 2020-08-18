@@ -1,1 +1,1 @@
-Sharing knowledge and insights on multi-body dynamics, vibration and acoustics.
+Sharing knowledge, insights and ideas on multi-body dynamics, vibration and acoustics.
