@@ -5,18 +5,18 @@ I got a chance to revisit an application of Statistical Energy Analysis (SEA) du
 
 Shock waves in structures due to sudden release of energy are common in aerospace applications. Explosive bolts to separate rocket stages, latches and deployment of appendices are some examples. The shock load is often short in time and the frequency content of the propagating waves are high. In some cases, the analysis is performed up to 100 kHz. This requires a high element-density when using FE-methods to predict the shock wave propagation. That's where SEA comes in to play.
 
-![](/images/plate_numbered_red.png "Analysed five-plate structure")
+![](/images/plate_numbered_red.png "Analyzed five-plate structure")
 
 ## Statistical Energy Analysis (SEA)
 SEA was developed for analysing mid- to high-frequency acoustics and has been later on become a tool in vibro-acoustics. Instead of a calculating the deterministic responses of structures, a statistical approach is done by considering an average response of similar sub-structures. An "element" can be one of the plates in the presented structure.
 
-A typical two-subsystem arrangement, depicted on the left, is commonly used to demonstrate the power flow in SEA. $E_i$ represents the vibro-acoustic energy of $i$:th subsystem and the power input to each system is $P_i$. Each subsystem has a power-loss, $\omega \eta_i E_i$, where $\omega$ is the analysed center-frequency and $\eta_i$ is **the loss factor**. The energy exchange between the two subsystems are governed by the **coupling loss factor** $\eta_12$ and the reciprocal loss factor $\eta_21$. The power balance for the system may be set up and written
+A typical two-subsystem arrangement, depicted on the left, is commonly used to demonstrate the power flow in SEA. $E_i$ represents the vibro-acoustic energy of $i$:th subsystem and the power input to each system is $P_i$. Each subsystem has a power-loss, $\omega \eta_i E_i$, where $\omega$ is the analysed center-frequency and $\eta_i$ is **the loss factor**. The energy exchange between the two subsystems are governed by the **coupling loss factor** $\eta_{12}$ and the reciprocal loss factor $\eta_{21}$. The power balance for the system may be set up and written
 
 $$P_1 = \omega \eta_1 E_1 + \omega \eta_{12} \eta_{1} \left(\frac{E_1}{n_1} - \frac{E_2}{n_2} \right)$$,
 
 $$P_2 = \omega \eta_2 E_2 + \omega \eta_{21} \eta_{2} \left(\frac{E_2}{n_2} - \frac{E_1}{n_1} \right)$$,
 
-where the **modal density** $n_i$ of the $i$:th subsystem has been introduced. This system of equations may be solved for the energy and the **spatial averaged** velocity squared may be calculated by, $v^2 = E_i / m_i $, where $m$ is the mass of the subsystem. The ***Shock Response Spectrum (SRS)** is commonly used to evaluate the shock severity. Anyhow, let us keep it simple and stick to analysing the velocity and acceleration responses.
+where the **modal density** $n_i$ of the $i$:th subsystem has been introduced. This system of equations may be solved for the energy and the **spatial averaged** velocity squared may be calculated by, $v^2 = E_i / m_i $, where $m$ is the mass of the subsystem. The **Shock Response Spectrum (SRS)** is commonly used to evaluate the shock severity. Anyhow, let us keep it simple and stick to analysing the velocity and acceleration responses.
 
 ## What to expect?
 So, to the main question. ***What results can we expect from SEA in comparison to a deterministic approach?** In SEA, there is no modal content since we only look at the spatial averaged response, based on the vibro-acoustic energy of the sub-systems. For a deterministic method, the eigen-frequencies will be visible in the low frequency range when the modes are well separated. However, as the frequency increases, the eigen-frequencies start to overlap and individual modes are hard to spot, thus, we have a higher **modal density** at higher frequencies. **SEA is only valid at high frequencies where the modal density is sufficiently large**. Let us visualize this in an example of a simply supported plate excited by a half-sine impulse of  200 $\mu s$.
