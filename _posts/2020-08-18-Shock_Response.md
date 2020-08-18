@@ -10,13 +10,21 @@ SEA was developed for analysing mid- to high-frequency acoustics and has been la
 
 A typical two-subsystem arrangement, depicted on the left, is commonly used to demonstrate the power flow in SEA. Eᵢ represents the vibro-acoustic energy of i:th subsystem and the power input to each system is Pᵢ. Each subsystem has a power-loss, ωηᵢEᵢ, where ω is the analysed center-frequency and ηᵢ is **the loss factor**. The energy exchange between the two subsystems are governed by the coupling loss factor η₁₂ and the reciprocal loss factor η₂₁. The power balance for the system may be set up and written
 
-P₁ = ω η₁ E₁ + ω η₁₂ n₁ E₁ ( E₁/n₁ - E₂/n₂ ),
+$$P_1 = \omega \eta_1 E_1 + \omega \eta_{12} \eta_{1} E_1 ( E_1/n_1 - E_2/n_2 )$$,
 
 P₂ = ω η₂ E₂ + ω η₂₁ n₂ E₂ ( E₂/n₂ - E₁/n₁ ),
 
 where the modal density nᵢ of the i:th subsystem has been introduced. This system of equations may be solved for the energy and the spatial averaged velocity squared may be calculated by, v² = Eᵢ / mᵢ, where m is the mass of the subsystem. The Shock Response Spectrum (SRS) is commonly used to evaluate the shock severity. Anyhow, let us keep it simple and stick to analysing the velocity and acceleration responses.
 
 ## What to expect?
+So, to the main question. What results can we expect from SEA in comparison to a deterministic approach? In SEA, there is no modal content since we only look at the spatial averaged response, based on the vibro-acoustic energy of the sub-systems. For a deterministic method, the eigen-frequencies will be visible in the low frequency range when the modes are well separated. However, as the frequency increases, the eigen-frequencies start to overlap and individual modes are hard to spot, thus, we have a higher modal density at higher frequencies. SEA is only valid at high frequencies where the modal density is sufficiently large. Let us visualize this in an example of a simply supported plate excited by a half-sine impulse of 200 μs.
+
+The blue dotted line in the figure to the right shows the average-velocity of 30 random points on the plate in third-octave bands, calculated by the (deterministic) mode summation technique and the green line is calculated with SEA. At 3-4 kHz we see how the results converge. Thus, the modal density is sufficiently high for SEA to be valid.
+
+As a final example, let us excite the previously presented five-plate structure with a 1 ms Haversine impulse at the lower end of plate 1 and compare the SEA results with the results from a FE-model of the structure. In the figure below, we see the spatial average acceleration of the individual five plates, respectively. The dashed lines are from the FE-model and the solid lines are from SEA model. Here, we also see that the results converge more and more as the frequency increases and the modal density increases. We have a rather good agreement between the two methods in the high-frequency region. The high-frequency results from the FE-model is however limited by the choice of element size. The element size was chosen to give reasonable simulation time on the cost of limiting the upper frequency range. Nevertheless, this is where SEA can take over, showing how the two methods can be used in conjunction.
+
+# Conclusion
+SEA is a statistical approach by considering an average response of similar sub-structures and is only valid at high frequencies where the modal density is sufficiently large. Individual modes are not considered in the low-frequency region as compared to deterministic approaches. SEA is a suitable method for high-frequency shock analysis and a good complementary tool to FE-methods.
 
 Here's the table of contents:
 
